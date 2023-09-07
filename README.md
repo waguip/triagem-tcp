@@ -1,6 +1,14 @@
 # Triagem Médica TCP
 Sistema de triagem médica com cliente e servidor utilizando sockets em java com o protocolo TCP
 
+### Principais Funcionalidades:
+
+- Registro de Usuários: Médicos e pacientes podem se registrar no sistema. Os detalhes dos usuários são salvos em um banco de dados SQL.
+- Triagem de Pacientes: Os pacientes preenchem um formulário com seus sintomas e são colocados em uma fila de atendimento, priorizados com base na gravidade dos sintomas.
+- Atendimento Médico: Os médicos têm a responsabilidade de chamar o próximo paciente da fila para iniciar um chat. Eles podem revisar as informações de triagem antes de iniciar o atendimento.
+- Chat entre Médico e Paciente: O chat ocorre somente quando ambos (médico e paciente) aceitam entrar na conversa. O servidor gerencia a comunicação entre eles.
+- Comunicação em JSON: Todas as mensagens trocadas entre médicos e pacientes são formatadas em JSON (JavaScript Object Notation), proporcionando uma comunicação estruturada e eficiente.
+
 ## Cliente
 <p float="left" width="100%">
   <img src="https://user-images.githubusercontent.com/51832038/216794291-3a96e6e2-e28b-4c78-a0ef-ea5d8f64cf84.png" width="50%">    
